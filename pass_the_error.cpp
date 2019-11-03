@@ -4,8 +4,6 @@
 #include <include/pass_the_error.hpp>
 #include <include/pass_the_error_error.hpp>
 
-//#include <lib/include/error_code_1.hpp>
-
 namespace pass_the_error
 {
 
@@ -37,14 +35,3 @@ category_list_t &register_category( const std::error_category &err_cat )
 }
 
 } // namespace pass_the_error
-
-/*
-int main()
-{
-        register_category( make_error_code( lib::ErrorCode1{} ).category() );
-
-    for( const auto &el : get_category_list() )
-    {
-         std::cout << "Category address: " << el.second << "; Category name: " << el.first << std::endl;
-    }
-}*/

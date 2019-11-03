@@ -1,6 +1,6 @@
-#include <include/pass_the_error_error.hpp>
-
 #include <string>
+
+#include <include/pass_the_error_error.hpp>
 
 namespace /*anonymous*/
 {
@@ -21,7 +21,8 @@ std::string PassTheErrorErrorCategory::message(int ev) const
      switch( static_cast<pass_the_error::PassTheErrorError>(ev) )
      {
           case pass_the_error::PassTheErrorError::UnknownCategoryGotten:
-               return "Error from unknown error category was gotten. Do you register all categories you can get from callee?"; 
+               return "Error from unknown error category was gotten."
+                    "Do you register all categories you can get from callee?"; 
           default:
                return "(unrecognized error)";
      }

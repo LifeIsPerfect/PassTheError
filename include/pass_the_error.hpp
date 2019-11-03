@@ -7,6 +7,9 @@
 #include <string>
 #include <list>
 
+namespace pass_the_error
+{
+
 using category_list_t = std::list<std::pair<std::string, const std::error_category *const>>;
 
 /// @brief Получить список зарегистрированных error_category.
@@ -20,5 +23,7 @@ category_list_t &get_category_list();
 ///
 /// @return Список зарегистрированных error_category.
 category_list_t &register_category( const std::error_category &err_cat );
+
+} // namespace pass_the_error
 
 #endif // _PASS_THE_ERROR_HPP_

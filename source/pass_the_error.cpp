@@ -18,7 +18,7 @@ specific language governing permissions and limitations under the License.
 #include <include/pass_the_error.hpp>
 #include <include/pass_the_error_error.hpp>
 
-#include <dist/gen-cpp/pass_the_error_types.h>
+#include <pass_the_error_types.h>
 
 namespace pass_the_error
 {
